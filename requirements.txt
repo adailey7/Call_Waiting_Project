@@ -1,4 +1,5 @@
 # requirements.txt
 # Included because many Paas's require a requirements.txt file in the project root
 # Just installs the production requirements.
+ sudo pip install ply
 -r requirements/prod.txt
