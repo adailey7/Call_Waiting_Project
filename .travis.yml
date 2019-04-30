@@ -14,4 +14,5 @@ matrix:
           dist: xenial
           sudo: true
 script:
- - pip install -r call_waiting_project/requirements.txt
+install: 
+  -pip install -r requirements/dev.txt
