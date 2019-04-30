@@ -1,6 +1,18 @@
 language: python
-
-python:
-    - 2.7
-    - 3.5
-    - 3.6
+matrix:
+    include:
+        - python: 3.4
+          dist: trusty
+          sudo: false
+        - python: 3.5
+          dist: trusty
+          sudo: false
+        - python: 3.6
+          dist: trusty
+          sudo: false
+        - python: 3.7
+          dist: xenial
+          sudo: true
+script:
+ - pip install -r python/requirements.txt
+ - python -m python.stdlib_list.stdlibTest
