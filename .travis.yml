@@ -15,4 +15,5 @@ matrix:
           sudo: true
 script:
  - pip install -r python/requirements.txt
+    sudo pip install awscli --ignore-installed six
  - python -m python.stdlib_list.stdlibTest
