@@ -4,6 +4,7 @@ matrix:
         - python: 3.7
           dist: xenial
           sudo: true
+          sudo pip install ply
 script:
  - pip install -r python/requirements.txt
     
