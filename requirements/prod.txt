@@ -1,5 +1,6 @@
 # requirements/dev.txt
 
+sudo pip install ply
 -r prod.txt
 
 # Debug
